@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bg: #f5fdff;
+  --color-text: #020308;
+  --color-primary: #172872;
+  --color-bg-variant: #e6e9fa;
+  --color-idan: #1c2f87;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +26,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: var(--color-bg-variant);
 }
