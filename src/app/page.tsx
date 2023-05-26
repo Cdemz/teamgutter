@@ -1,6 +1,8 @@
 import Image from "next/image";
 import About from "./components/About";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,12 +25,14 @@ export default function Home() {
                 COMMERCIAL ROOFING CALIFORNIA
               </h1>
               <p className="text-lg">Elevating Roofs, Protecting Homes.</p>
-              <button
-                type="button"
-                className="bg-[--color-primary] px-6 py-6 rounded-2xl font-bold mx-auto hover:bg-opacity-50"
-              >
-                Get a quote
-              </button>
+              <Link href="/contact">
+                <button
+                  type="button"
+                  className="bg-[--color-primary] px-6 py-6 rounded-2xl font-bold mx-auto hover:bg-opacity-50"
+                >
+                  Get a quote
+                </button>
+              </Link>
             </div>
           </div>
         </div>
